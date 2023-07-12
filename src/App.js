@@ -1,6 +1,11 @@
+import Time from './components/Time/Time.js';
+
 const App = () => {
+  const [time, setTime] = useState(0);
+  const [start, setStart] = useState(null);
+
   return (
-    <h1>Hello world</h1>
+    <Time />
   );
 };
 
