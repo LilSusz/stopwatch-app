@@ -1,0 +1,36 @@
+@import '../../styles/settings.scss';
+
+.button {
+    background: $color-success;
+    color: $color-light;
+    text-align: center;
+    font-weight: 800;
+    border: 0;
+    border-radius: $radius;
+    line-height: 1.2;
+    padding: $base-size;
+    margin: 0 $base-size $base-size $base-size;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        background: darken($color-success, 10%);
+    }
+
+    &.danger {
+        background: $color-warning;
+
+        &:hover {
+            background: darken($color-warning, 10%);
+        }
+    }
+
+    &.transparent {
+        background: transparent;
+
+        &:hover {
+            color: darken($color-light, 20%);
+        }
+    }
+}
